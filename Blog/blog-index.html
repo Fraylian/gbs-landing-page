@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog – GBS</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body { background:#fff; }
+    .blog-container { max-width:1100px; margin:0 auto; padding:40px 20px; }
+    .blog-list { display:flex; flex-direction:column; gap:40px; }
+    .blog-card {
+      display:grid;
+      grid-template-columns:260px 1fr;
+      gap:24px;
+      border-bottom:1px solid #e5e7eb;
+      padding-bottom:24px;
+    }
+    .blog-card img { width:100%; border-radius:6px; object-fit:cover; height:180px; }
+    .blog-meta { font-size:13px; color:#6b7280; margin-bottom:8px; }
+    .blog-card h2 { font-size:20px; font-weight:700; margin:4px 0 12px; }
+    .blog-card p { color:#4b5563; font-size:15px; margin-bottom:8px; }
+    .blog-footer { font-size:13px; color:#6b7280; display:flex; gap:16px; align-items:center; }
+    .blog-footer span { display:flex; gap:4px; align-items:center; }
+    .blog-footer span::before { content:\"•\"; color:#9ca3af; }
+    @media(max-width:768px){
+      .blog-card{grid-template-columns:1fr;}
+      .blog-card img{height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="https://static.wixstatic.com/media/00ed67_50161f0de7a041b9b9bd98bd64a46b1d~mv2.png" alt="GBS logo">
+        </a>
+      </div>
+      <nav class="navlinks">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#insurance">Insurance</a>
+        <a href="../index.html#services">Business Services</a>
+        <a href="../index.html#other">Other Services</a>
+        <a href="blog-index.html" class="active">Blog</a>
+      </nav>
+      <a class="nav-cta" href="../index.html#contact">Email Us</a>
+    </div>
+  </header>
+
+  <!-- Blog List -->
+  <main class="blog-container">
+    <h1 style="margin-bottom:32px;">All Posts</h1>
+
+    <div class="blog-list">
+      <!-- Post 1 -->
+      <article class="blog-card">
+        <img src="https://static.wixstatic.com/media/11062b_bcfb88c448bb40f4a1d81bc7401b878f~mv2.jpg" alt="stimulus payments">
+        <div>
+          <div class="blog-meta">Feb 23, 2021 · 3 min read</div>
+          <h2><a href="post1.html">How to claim missing stimulus payments on your 2020 tax return</a></h2>
+          <p>By Alicia Adamcyzk – With tax season approaching, those who have not received their stimulus payments or think the IRS deposited the wrong amount can claim it on their return.</p>
+          <div class="blog-footer">
+            <span>12 views</span>
+            <span>0 comments</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="blog-card">
+        <img src="https://static.wixstatic.com/media/2ee9f7_62f56aed15834907953efbb0c70c6bad~mv2.jpg" alt="tax deadline">
+        <div>
+          <div class="blog-meta">Mar 23, 2020 · 3 min read</div>
+          <h2><a href="post2.html">Tax Return Payment Deadline Extended to July 15, 2020</a></h2>
+          <p>March 21,2020 – The Treasury Department and the Internal Revenue Service are providing special tax filing and payment relief to individuals...</p>
+          <div class="blog-footer">
+            <span>7 views</span>
+            <span>0 comments</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="blog-card">
+        <img src="https://static.wixstatic.com/media/d9e317c7871a4d5fbccc325a7c09cdb4.jpg" alt="gov shutdown">
+        <div>
+          <div class="blog-meta">Jan 24, 2019 · 5 min read</div>
+          <h2><a href="post3.html">Q&amp;A: How new law, gov't shutdown can impact tax season</a></h2>
+          <p>Tax season is almost here and this one could be tricky. It's the first year that taxpayers will be filing under the massive tax law reform...</p>
+          <div class="blog-footer">
+            <span>20 views</span>
+            <span>0 comments</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 4 -->
+      <article class="blog-card">
+        <img src="https://static.wixstatic.com/media/a04ac0cde13c4cadb5e47f2d58d8f51a.jpg" alt="love tax season">
+        <div>
+          <div class="blog-meta">Jan 24, 2019 · 2 min read</div>
+          <h2><a href="post4.html">8 Reasons to Love Tax Season</a></h2>
+          <p>For some, the IRS’s tax filing deadline of April 15 brings as much cause for excitement as an upcoming dentist appointment...</p>
+          <div class="blog-footer">
+            <span>18 views</span>
+            <span>0 comments</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 5 -->
+      <article class="blog-card">
+        <img src="https://static.wixstatic.com/media/32890b185ed74b51acc3220220b3b961.jpg" alt="ITIN expire">
+        <div>
+          <div class="blog-meta">Jun 30, 2018 · 3 min read</div>
+          <h2><a href="post5.html">More than 2 million ITINs to expire this year; Renew soon to avoid refund delays</a></h2>
+          <p>WASHINGTON – With more than 2 million Individual Taxpayer Identification Numbers (ITINs) set to expire at the end of 2018...</p>
+          <div class="blog-footer">
+            <span>7 views</span>
+            <span>0 comments</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 6 -->
+      <article class="blog-card">
+        <img src="https://static.wixstatic.com/media/14b687731c3f4f58a9de074e9c45701d.jpg" alt="tax reform">
+        <div>
+          <div class="blog-meta">Jun 30, 2018 · 2 min read</div>
+          <h2><a href="post6.html">Tax reform allows people with disabilities to put more money into ABLE accounts, expands eligibility</a></h2>
+          <p>WASHINGTON – People with disabilities can now put more money into their tax-favored ABLE accounts and expand eligibility...</p>
+          <div class="blog-footer">
+            <span>6 views</span>
+            <span>0 comments</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 7 -->
+      <article class="blog-card">
+        <img src="https://static.wixstatic.com/media/469e00d2afd84d4998eb3742185505b1.jpg" alt="check withholding">
+        <div>
+          <div class="blog-meta">Jun 30, 2018 · 3 min read</div>
+          <h2><a href="post7.html">Tax bill this year? Check withholding soon, avoid another one next year</a></h2>
+          <p>WASHINGTON – Taxpayers who owed additional tax when they filed their 2017 federal tax return earlier this year can avoid another...</p>
+          <div class="blog-footer">
+            <span>5 views</span>
+            <span>0 comments</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top container">
+      <div>
+        <h4>We're on a mission.</h4>
+        <p>At Guzman Business Services we’re here to transform the industry and deliver financial services that actually work for your business.</p>
+      </div>
+      <div>
+        <h4>Guzman Business Services</h4>
+        <p>4014 W 45th Ave<br>Brooklyn, NY 11220</p>
+        <p>(718) 567-0608</p>
+      </div>
+      <div class="sitemap">
+        <h4>Site Map</h4>
+        <a href="../index.html">Home</a>
+        <a href="../index.html#insurance">Insurance</a>
+        <a href="../index.html#services">Business Services</a>
+        <a href="../index.html#other">Other Services</a>
+        <a href="blog-index.html">Blog</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
