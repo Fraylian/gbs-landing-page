@@ -1,34 +1,133 @@
+<!-- FOOTER -->
+<style>
+/* FOOTER */
+.footer {
+  color: #cfe2ff;
+  font-size: 14px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 40px;
+  background: linear-gradient(90deg, #0b2b4a 0%, #092444 50%, #0d56a3 100%);
+  padding: 48px 20px;
+}
+
+.footer-top h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.footer-top p {
+  color: #cfe2ff;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.footer-sitemap a {
+  display: block;
+  color: #cfe2ff;
+  margin-bottom: 8px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-sitemap a:hover {
+  color: #fff;
+}
+
+.footer-logo img {
+  margin-top: 20px;
+  height: 50px;
+}
+
+.footer-bottom {
+  background: #0a2a50;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.foot-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+}
+
+.foot-row p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.foot-icons {
+  display: flex;
+  gap: 18px;
+}
+
+.foot-icons img {
+  width: 18px;
+  height: 18px;
+  filter: invert(90%);
+  transition: filter 0.3s ease;
+}
+
+.foot-icons img:hover {
+  filter: invert(100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .foot-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+
+</style>
+
 <footer class="footer">
   <div class="footer-top container">
     <div class="footer-mission">
       <h4>We're on a mission.</h4>
-      <p>At Guzman Business Services we’re here to transform the industry and deliver financial services that actually work for your business.</p>
-      <p>We’re here to serve the community and help local businesses start and grow – visit us and allow us to help with all your business services.</p>
+      <p>At Guzman Business service we're here to transform the industry and deliver
+         financial services that actually work for your business.</p>
+      <p>We’re here to serve the community and help local business start and grow – visit us
+         and allow us to help with all your business services.</p>
     </div>
 
-    <div class="footer-company">
+    <div class="footer-contact">
       <h4>Guzman Business Services</h4>
       <p>4914 4th Ave<br>Brooklyn, NY 11220</p>
       <p><strong>(718) 567-0608</strong></p>
-      <img src="https://static.wixstatic.com/media/00ed67_50161f0de7a041b9b9bd98bd64a46b1d~mv2.png" alt="GBS Logo" style="width:90px;margin-top:12px;">
+      <div class="footer-logo">
+        <img src="assets/img/logo-footer.png" alt="GBS Logo">
+      </div>
     </div>
 
     <div class="footer-sitemap">
       <h4>Site Map</h4>
       <a href="index.html">Home</a>
-      <a href="index.html#insurance">Insurance</a>
-      <a href="index.html#services">Business Services</a>
-      <a href="index.html#other">Other Services</a>
+      <a href="pag/home-insurance.html">Insurance</a>
+      <a href="pag/business-registration.html">Business Services</a>
+      <a href="pag/notary-public.html">Other Services</a>
       <a href="Blog/blog-index.html">Blog</a>
     </div>
   </div>
 
   <div class="footer-bottom">
-    <p>©2018 by GBS Guzman Business Services Corp</p>
-    <div class="socials">
-      <a href="#"><i>📍</i></a>
-      <a href="#"><i>📷</i></a>
-      <a href="#"><i>🐦</i></a>
+    <div class="container foot-row">
+      <p>©2018 by GBS Guzman Business Services Corp</p>
+      <div class="foot-icons">
+        <a href="#"><img src="assets/svg/location.svg" alt="Location"></a>
+        <a href="#"><img src="assets/svg/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="assets/svg/twitter.svg" alt="Twitter"></a>
+      </div>
     </div>
   </div>
 </footer>
